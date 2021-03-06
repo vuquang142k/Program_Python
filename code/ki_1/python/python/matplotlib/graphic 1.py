@@ -1,0 +1,18 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x1=np.linspace(-10,10,100)
+x4=np.linspace(-2,2,10)
+y1=np.sin(x1)
+y2=np.cos(x1)
+y3=x1**2*np.exp(-x1**2)
+y4=abs(x4)
+plt.plot(x1,y1,'-',label='sin(x)')
+plt.plot(x1,y2,label='cos(x)')
+plt.plot(x1,y3,'-.',label='x**2*exp(-x**2)')
+plt.plot(x4,y4,':',linewidth=5,label='|x|')
+plt.title('4 graphs')
+plt.xlabel('X')
+plt.ylabel('Y')
+plt.legend(loc='upper left')
+plt.grid()
+plt.show()
